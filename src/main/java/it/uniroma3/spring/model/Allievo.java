@@ -1,13 +1,13 @@
 package it.uniroma3.spring.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.hibernate.validator.constraints.Email;
+import javax.persistence.ManyToMany;
 
 /**
  * 
@@ -27,6 +27,9 @@ public class Allievo
 	private Number telefono;
 	private Date data_di_nascita;
 	private String luogo_di_nascita;
+	
+	@ManyToMany(mappedBy = "allievi")
+	private List<Attività> attività;
 	
 	public Allievo()
 	{
@@ -111,5 +114,15 @@ public class Allievo
 	public void setLuogo_di_nascita(String luogo_di_nascita)
 	{
 		this.luogo_di_nascita = luogo_di_nascita;
+	}
+
+	public List<Attività> getAttività()
+	{
+		return attività;
+	}
+
+	public void setAttività(List<Attività> attività)
+	{
+		this.attività = attività;
 	}
 }

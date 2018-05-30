@@ -5,8 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.hibernate.validator.constraints.Email;
-
 /**
  * 
  * @author Lorenzo Giusti, Jacopo Grifoni, Silvio Severino

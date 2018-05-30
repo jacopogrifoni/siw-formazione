@@ -1,7 +1,5 @@
 package it.uniroma3.spring.model;
 
-import javax.persistence.Entity;
-
 /**
  * 
  * @author Lorenzo Giusti, Jacopo Grifoni, Silvio Severino
