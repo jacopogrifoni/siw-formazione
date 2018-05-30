@@ -7,9 +7,11 @@ import javax.persistence.Entity;
  * @author Lorenzo Giusti, Jacopo Grifoni, Silvio Severino
  *
  */
-@Entity
+
 public class Azienda
 {
+	
+	
 	private static Azienda single_instance = null;
 	
 	private Azienda()

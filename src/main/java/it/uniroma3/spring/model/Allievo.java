@@ -23,7 +23,7 @@ public class Allievo
 	
 	private String nome;
 	private String cognome;
-	private Email email;
+	private String email;
 	private Number telefono;
 	private Date data_di_nascita;
 	private String luogo_di_nascita;
@@ -32,7 +32,7 @@ public class Allievo
 	{
 	}
 	
-	public Allievo(String nome, String cognome, Email email, Number telefono, Date data_di_nascita,
+	public Allievo(String nome, String cognome, String email, Number telefono, Date data_di_nascita,
 			String luogo_di_nascita)
 	{
 		this.nome = nome;
@@ -73,12 +73,12 @@ public class Allievo
 		this.cognome = cognome;
 	}
 
-	public Email getEmail()
+	public String getEmail()
 	{
 		return email;
 	}
 
-	public void setEmail(Email email)
+	public void setEmail(String email)
 	{
 		this.email = email;
 	}

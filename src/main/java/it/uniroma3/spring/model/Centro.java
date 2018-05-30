@@ -20,11 +20,11 @@ public class Centro
 	private long id;
 	
 	private String nome;
-	private Email email;
+	private String email;
 	private Number telefono;
 	private Integer capienzaMax;
 	
-	public Centro(String nome, Email email, Number telefono, Integer capienzaMax)
+	public Centro(String nome, String email, Number telefono, Integer capienzaMax)
 	{
 		this.nome = nome;
 		this.email = email;
@@ -56,12 +56,12 @@ public class Centro
 		this.nome = nome;
 	}
 
-	public Email getEmail()
+	public String getEmail()
 	{
 		return email;
 	}
 
-	public void setEmail(Email email)
+	public void setEmail(String email)
 	{
 		this.email = email;
 	}
