@@ -1,7 +1,5 @@
 package it.uniroma3.spring.model;
 
-import java.util.Map;
-
 import javax.persistence.Entity;
 
 /**
@@ -13,7 +11,6 @@ import javax.persistence.Entity;
 public class Azienda
 {
 	private static Azienda single_instance = null;
-	private Map<Integer, Allievo> allievi; 
 	
 	private Azienda()
 	{
